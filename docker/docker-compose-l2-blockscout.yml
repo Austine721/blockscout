@@ -9,11 +9,11 @@ services:
       context: ..
       dockerfile: ./docker/Dockerfile
     expose:
-      - 4000
+      - 80
     ports:
-      - 4000:4000
+      - 80:80
     env_file:
       - envs/l2-488.env
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@192.168.31.146:5432/blockscout-l2?ssl=false
+      - DATABASE_URL=postgresql://blockscout_app:rEuA9mAU@34.237.142.214:5432/blockscout
     command: mix phx.server
