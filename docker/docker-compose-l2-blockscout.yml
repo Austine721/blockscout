@@ -2,7 +2,7 @@ version: "3"
 
 services:
   blockscout-l2:
-    image: metis/blockscout
+    image: metis/blockscout-notrace
     # depends_on:
     #   - postgres
     build:
