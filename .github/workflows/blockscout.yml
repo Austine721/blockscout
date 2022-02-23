@@ -41,6 +41,6 @@ jobs:
 
         docker tag metis/blockscout:latest 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
 
-        echo "pushing the build to ecr repo"
+        echo "pushing the build to ecr repo test"
 
         docker push 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
